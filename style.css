@@ -1,0 +1,239 @@
+header {
+    padding: 2%;
+    background-color: whitesmoke;
+}
+
+body {
+    background-color: whitesmoke;
+}
+
+/* Navigation */
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+    border: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    background-color: whitesmoke;
+    padding: 1%;
+    border: 1.5px solid black;
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px 0px #ff9acc;
+}
+
+nav ul li a:hover {
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    border: 3px solid rgba(247, 79, 158, 255);
+    padding: 1%;
+}
+
+/* Popularity */
+
+#yearStory {
+    width: 20%;
+    position: absolute;
+    margin-left: 15%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.timeline-container {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background-color: #f0f0f0;
+    overflow-x: hidden;
+    padding: 1%;
+
+}
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.slider {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 1%;
+}
+
+/* Comparison */
+
+.year-labels {
+
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.tick {
+    flex: 1;
+    text-align: center;
+}
+
+.selected-year {
+    font: sans-serif;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 24px;
+}
+
+.chart {
+    width: 42.5%;
+    height: 10;
+    float: left;
+}
+
+#checkboxContainer {
+    position: relative;
+    top: 9vh;
+    left: 3.5vw;
+    font-size: 125%;
+
+}
+
+.custom-checkbox {
+    display: inline-block;
+    margin-right: 0.5%;
+    width: 20px;
+    height: 20px;
+    border-radius: 20%;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.custom-checkbox.checked::after {
+    content: '✔';
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    width: 50px;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+}
+
+#chartExplanation {
+    position: absolute;
+    margin-left: 2%;
+    margin-top: 8%;
+}
+
+
+#genreDropdown {
+    background-color: whitesmoke;
+    margin-top: 1.5%;
+    margin-left: 2%;
+    font-size: medium;
+    padding: 0.25%;
+    border-color: #000000;
+    border-width: 2px;
+}
+
+#genreDescription {
+    width: 21%;
+    position: absolute;
+    margin-left: 12%;
+    margin-top: 4%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+#genreInfo {
+    position: absolute;
+    right: 0;
+    top: 85%;
+    transform: translateY(-50%);
+    background-color: whitesmoke;
+    font-size: xx-large;
+    padding: 3%;
+    display: none;
+}
+
+
+/* Adds space between table cells */
+table tr td {
+    padding-bottom: 3.5%;
+    padding-left: 3%;
+}
+
+/* Adds space between the images */
+table tr td img {
+    margin-right: 2vw;
+}
+
+/* Moves the whole table to the right */
+#compatibilityTable {
+    margin-left: 7vw;
+    text-align: center;
+    vertical-align: middle;
+}
+
+table {
+    display: inline-block;
+}
+
+/* Reference Glowing title: https://www.sliderrevolution.com/resources/css-text-animation/ */
+#introduction {
+    text-align: center;
+    margin-top: 5%;
+    grid-column: 1;
+    grid-row: 1;
+    z-index: 1;
+    font-size: 100%;
+    animation: glow 2s ease-in-out infinite alternate;
+    text-align: center;
+}
+
+a {
+    color: #4db1bc;
+    grid-column: 1;
+    grid-row: 1;
+    align-self: end;
+    justify-self: center;
+    padding-bottom: 1rem;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 20px #FF69B4;
+        ;
+    }
+
+    to {
+        text-shadow: 0 0 30px rgba(247, 79, 158, 255), 0 0 10px #ffc4ee;
+    }
+}
+
+#introText {
+    width: 50%;
+    margin-top: 5%;
+    transform: translateX(50%);
+}
+
+#introImage img {
+    position: absolute;
+    top: 0%;
+    right: 3%;
+    width: 400px;
+    transform: rotate(20deg);
+}

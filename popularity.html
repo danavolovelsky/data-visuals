@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Visualization</title>
+    <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Introduction</a></li>
+                <li><a href="chart.html">Comparison</a></li>
+                <li><a href="popularity.html">Popularity</a></li>
+                <li><a href="compatibility.html">Compatibility</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div></div>
+        <svg width="1425" height="540"></svg>
+        <div id="yearStory"></div>
+        <div class="timeline-container">
+            <div class="timeline" id="timeline">
+                <input type="range" min="0" max="5" value="0" class="slider" id="slider">
+                <div class="year-labels">
+                    <div class="tick">1950s</div>
+                    <div class="tick">1960s</div>
+                    <div class="tick">1970s</div>
+                    <div class="tick">1980s</div>
+                    <div class="tick">1990s</div>
+                    <div class="tick">2000s</div>
+                </div>
+            </div>
+        </div>
+        <div class="selected-year" id="selectedYear">1950s</div>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+    <script src="js/popularity.js"></script>
+
+</body>
+
+</html>

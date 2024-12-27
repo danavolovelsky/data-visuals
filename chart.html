@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Visualization</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Introduction</a></li>
+                <li><a href="chart.html">Comparison</a></li>
+                <li><a href="popularity.html">Popularity</a></li>
+                <li><a href="compatibility.html">Compatibility</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="chart">
+            <svg id="chart1" width="1000" height="800"></svg>
+            <script src="js/chart.js"></script>
+
+        </div>
+        <div class="chart">
+            <svg id="chart2" width="1000" height="800"></svg>
+        </div>
+        <div id="checkboxContainer"></div>
+    </main>
+    <footer>
+        <div id="chartExplanation" style="display: flex; flex-wrap: wrap; justify-content: space-between;">
+            <div style="flex: 1; min-width: 300px; padding: 10px;">
+                <h3>1. Popularity Graph:</h3>
+                <p>
+                    This graph displays the most popular genres over time, highlighting which genres
+                    have the largest audience.
+                </p>
+                <h3>2. Percentage Growth Graph:</h3>
+                <p>
+                    This graph shows the genres that have grown the most in percentage terms, regardless of their
+                    overall popularity. It focuses on how much each genre's popularity has increased or decreased.
+                </p>
+            </div>
+            <div style="flex: 1; min-width: 300px; padding: 10px;">
+                <h3>To interact with the charts:</h3>
+                <p>
+                    <b>Checkboxes:</b> <br>Use the checkboxes to select which genres you want to compare and how many
+                    you
+                    want
+                    to view at once.
+                    <br><br>
+                    <b>Zooming:</b> <br>You can zoom in on specific parts of the chart by holding down and swiping close
+                    to the x-axis.<br>To return to the full view, simply check any of the checkboxes.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+
+</body>
+
+</html>

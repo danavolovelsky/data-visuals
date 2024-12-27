@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Visualization</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Introduction</a></li>
+                <li><a href="chart.html">Comparison</a></li>
+                <li><a href="popularity.html">Popularity</a></li>
+                <li><a href="compatibility.html">Compatibility</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+        <select id="genreDropdown">
+            <option value="">Select a genre</option>
+        </select>
+
+        <div id="genreDescription"></div>
+
+        <div id="genreInfo"></div>
+
+        <div id="compatibilityTable">
+        </div>
+
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+    <script src="js/compatibility.js"></script>
+
+</body>
+
+</html>
